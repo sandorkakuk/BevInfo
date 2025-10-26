@@ -1,4 +1,4 @@
-# Két szám közűl melyik a naygobb?
+# Két szám közűl melyik a nagyobb?
 a = 42
 b = 17
 
