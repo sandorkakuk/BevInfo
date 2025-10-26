@@ -1,4 +1,5 @@
-/* első N szám  */
-var i;
-for (i = 1) {i<10 i--;
-    writeln (i);}
+// első N szám
+let i;
+for (i = 1 i<10 i++) {
+    console.log(i)
+}
