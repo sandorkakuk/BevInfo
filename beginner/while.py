@@ -2,4 +2,4 @@
 sz=0
 while sz <=5:
     print (sz)
-    sz==sz+1
+    sz==sz+1 #Noveljuk a számot 
