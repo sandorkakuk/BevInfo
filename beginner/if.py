@@ -1,9 +1,10 @@
-# Változó értéke alapján döntünk
-hőmérséklet = 15
+# Két szám közűl melyik a naygobb?
+a = 42
+b = 17
 
-if hőmérséklet > 25:
-    print("Meleg van, menjünk strandra!")
-elif hőmérséklet > 10:
-    print("Kellemes idő, sétáljunk egyet.")
+if (a > b):
+    print ("Az A a nagyobb szám:", a)
+elif (b > a):
+    print ("A B a nagyobb szám:", b)
 else:
-    print("Hideg van, maradjunk bent.")
+   print ("A két szám egyenlő:", a)
