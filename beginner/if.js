@@ -1,4 +1,4 @@
-//Két szám közűl melyik a naygobb?
+//Két szám közűl melyik a nagyobb?
 let a = 42;
 let b = 17;
 
