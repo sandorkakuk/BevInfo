@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript vs Python</title>
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Cím dia -->
+        <section>
+          <h1>JavaScript vs Python</h1>
+          <p>Alapvető különbségek kódokkal és táblázatokkal</p>
+        </section>
+
+        <!-- Változók -->
+        <section>
+          <h2>Változók</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+let szam = 10;
+const szoveg = "Helló!";
+var regiValtozo = true;
+              </code></pre></td>
+              <td><pre><code class="language-python">
+szam = 10
+szoveg = "Helló!"
+regi_valtozo = True
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- If szerkezet -->
+        <section>
+          <h2>Feltételes szerkezet (if)</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+if (szam > 5) {
+  console.log("Nagyobb");
+} else if (szam === 5) {
+  console.log("Pontosan 5");
+} else {
+  console.log("Kisebb");
+}
+              </code></pre></td>
+              <td><pre><code class="language-python">
+if szam > 5:
+    print("Nagyobb")
+elif szam == 5:
+    print("Pontosan 5")
+else:
+    print("Kisebb")
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- While ciklus -->
+        <section>
+          <h2>While ciklus</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+              </code></pre></td>
+              <td><pre><code class="language-python">
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Listák -->
+        <section>
+          <h2>Listák / Tömbök</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+let lista = [1,2,3];
+lista.push(4);
+console.log(lista[0]);
+              </code></pre></td>
+              <td><pre><code class="language-python">
+lista = [1,2,3]
+lista.append(4)
+print(lista[0])
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Függvények -->
+        <section>
+          <h2>Függvények</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+function osszeg(a, b) {
+  return a + b;
+}
+console.log(osszeg(3,4));
+              </code></pre></td>
+              <td><pre><code class="language-python">
+def osszeg(a, b):
+    return a + b
+
+print(osszeg(3,4))
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- For ciklus -->
+        <section>
+          <h2>For ciklus</h2>
+          <table>
+            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tr>
+              <td><pre><code class="language-js">
+// klasszikus for
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// for-of
+let lista = [10,20,30];
+for (let elem of lista) {
+  console.log(elem);
+}
+              </code></pre></td>
+              <td><pre><code class="language-python">
+# range alapú
+for i in range(5):
+    print(i)
+
+# lista bejárása
+lista = [10,20,30]
+for elem in lista:
+    print(elem)
+              </code></pre></td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Összefoglaló -->
+        <section>
+          <h2>Összefoglaló táblázat</h2>
+          <table>
+            <tr><th>Fogalom</th><th>JavaScript</th><th>Python</th></tr>
+            <tr><td>Változó</td><td>let x = 5;</td><td>x = 5</td></tr>
+            <tr><td>If</td><td>if (...) { ... } else if (...) { ... }</td><td>if ...: elif ...: else:</td></tr>
+            <tr><td>While</td><td>while (feltétel) { ... }</td><td>while feltétel: ...</td></tr>
+            <tr><td>For</td><td>for (let i=0; i<5; i++)</td><td>for i in range(5)</td></tr>
+            <tr><td>Lista</td><td>arr.push(10)</td><td>arr.append(10)</td></tr>
+            <tr><td>Függvény</td><td>function f(x){...}</td><td>def f(x): ...</td></tr>
+          </table>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize();
+    </script>
+  </body>
+</html>
