@@ -1,0 +1,37 @@
+// bináris tört átalakítása hexadecimális törtté
+
+const hex = "0123456789ABCDEF";
+
+let x0 = "0.0111001"; // eredeti tört
+let x = x0.substring(2);
+
+// kiegészítés nullákkal, hogy a hossz 4 többszöröse legyen
+while (x.length % 4 !== 0) {
+  x = x + "0"; // closing 0
+}
+
+let t = ""; // végeredmény törtrésze
+
+let s = ""; // négy bites csoport
+let h = 0; // négy bites csoport decimális értéke
+let p = 8; // kezdő helyiérték
+
+for (let i = 0; i < x.length; i++) {
+  s = s + x[i];
+  if (x[i] === "1") {
+    h += p;
+  }
+  p /= 2;
+
+  if (i % 4 === 3) {
+    console.log("    " + s + " = " + h + " = " + hex[h]);
+    t = t + hex[h];
+    s = "";
+    h = 0;
+    p = 8;
+  }
+}
+
+console.log();
+console.log(x0 + " = 0." + t);
+console.log("____________");
