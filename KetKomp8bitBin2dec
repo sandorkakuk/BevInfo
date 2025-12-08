@@ -1,0 +1,62 @@
+# kettes komplemens kódban adott (8 bites) bináris szám átalakítása decimális számmá
+
+def bin2dec(x: str) -> int:
+    d = 0
+    helyiertek = 1
+
+    for _ in range(1, len(x)):
+        helyiertek *= 2
+
+    for ch in x:
+        sz = 1 if ch == "1" else 0
+        r = sz * helyiertek
+        d += r
+        helyiertek //= 2
+    return d
+
+
+def bin2binc(x: str) -> str:
+    xc = ""
+    for ch in x:
+        xc += "0" if ch == "1" else "1"
+    return xc
+
+
+def inc(x: str) -> str:
+    xc = ""
+    j = len(x) - 1  # utolsó karakter indexe
+    atvitel = 1
+    while j >= 0:
+        if x[j] == "0" and atvitel == 0:
+            xc = "0" + xc
+        elif x[j] == "0" and atvitel == 1:
+            xc = "1" + xc
+            atvitel = 0
+        elif x[j] == "1" and atvitel == 0:
+            xc = "1" + xc
+        else:
+            xc = "0" + xc
+            atvitel = 1
+        j -= 1
+    return xc
+
+
+# feltétel: nyolc biten ábrázoljuk a számokat (m=8), tehát xb hossz = 8
+xb = "10000001"
+s = ""
+
+print("Bináris szám:", xb)
+print()
+
+if xb[0] == "0":  # előjelbit pozitív
+    s = "+"
+else:  # előjelbit negatív
+    s = "-"
+    x = bin2binc(xb)
+    print("Egyes komplemens:", x)
+    xb = inc(x)
+    print("Kettes komplemens:", xb)
+    print()
+
+print("Decimális szám:", s + str(bin2dec(xb)))
+print("__________")
