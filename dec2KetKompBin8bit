@@ -1,0 +1,78 @@
+// decimális szám átalakítása kettes komplemens kódban ábrázolt bináris számmá (8 biten)
+
+function dec2bin(x, m) {
+  let b = "";
+  let q = 1;
+
+  while (q > 0) {
+    q = Math.trunc(x / 2); // egész osztás
+    if (x % 2 === 1) {
+      b = "1" + b;
+    } else {
+      b = "0" + b;
+    }
+    x = q;
+  }
+
+  while (b.length < m) {
+    b = "0" + b; // vezető nullák hozzáadása
+  }
+  return b;
+}
+
+function bin2binc(x) {
+  let xc = "";
+  for (let i = 0; i < x.length; i++) {
+    xc += (x[i] === "1") ? "0" : "1";
+  }
+  return xc;
+}
+
+function inc(x) {
+  let xc = "";
+  let j = x.length - 1; // utolsó karakter indexe
+  let atvitel = 1;
+  while (j >= 0) {
+    if (x[j] === "0" && atvitel === 0) {
+      xc = "0" + xc;
+    } else if (x[j] === "0" && atvitel === 1) {
+      xc = "1" + xc;
+      atvitel = 0;
+    } else if (x[j] === "1" && atvitel === 0) {
+      xc = "1" + xc;
+    } else {
+      xc = "0" + xc;
+      atvitel = 1;
+    }
+    j = j - 1;
+  }
+  return xc;
+}
+
+/* feltétel: nyolc biten ábrázoljuk a számokat (m=8), tehát -128 <= xd < 127 teljesül */
+
+const m = 8; // bitek száma
+let xd = -127;
+let xb = "";
+
+console.log("Decimális szám: " + xd);
+console.log();
+
+if (xd >= 0) {
+  xb = dec2bin(xd, m);
+} else {
+  let xa, x;
+  xd = -xd;
+  console.log("Abszolút érték: " + xd);
+  console.log();
+
+  xa = dec2bin(xd, m);
+  console.log("Bináris érték:     " + xa);
+  x = bin2binc(xa);
+  console.log("Egyes komplemens:  " + x);
+  xb = inc(x);
+  console.log();
+}
+
+console.log("Kettes komplemens: " + xb);
+console.log("__________");
