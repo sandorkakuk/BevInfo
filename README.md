@@ -1,5 +1,15 @@
 # BevInfo
 Bevezetés az informatikába órák gyakorlati anyagainak gyűjtőhelye
+Hálózati Operációs rendszerek és IoT technológiák előadások prezentációi
+
+
+> | JavaScript és Python összehasonlítása |
+> | ------------- |
+> | [JavaScript vs Python](/jsvspy/index.html)|
+
+
+
+
 
 ```bash
 // lebegőpontos számot ábrázoló bináris számsorozat átalakítása decimális számmá (1. példa)
