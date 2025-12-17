@@ -1,49 +1,68 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>JavaScript vs Python</title>
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "deck"}' />
+		<title>deck</title>
 
-        <!-- Cím dia -->
-        <section>
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="17c186184106696ba7d93b8544e27316"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 276px;" data-name="text-f48ae9" data-block-id="33e3c5362812653af612ec9b5e0b279b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h1>JavaScript vs Python</h1>
           <p>Alapvető különbségek kódokkal és táblázatokkal</p>
-        </section>
+        </div></div></section><section data-id="d469e7ed6a4df500421137956c438c5f"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 172.5px;" data-name="text-fd1946" data-block-id="d934c1d4aa21bbd3556b820c8e542ba4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="" style="z-index: 10;">
+<h2>Változók</h2>
 
-        <!-- Változók -->
-        <section>
-          <h2>Változók</h2>
-          <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
-            <tr>
-              <td><pre><code class="language-js">
+<table>
+	<tbody>
+		<tr>
+			<th>JavaScript</th>
+			<th>Python</th>
+		</tr>
+		<tr>
+			<td>
+			<pre><code class="language-js">
 let szam = 10;
 const szoveg = "Helló!";
 var regiValtozo = true;
-              </code></pre></td>
-              <td><pre><code class="language-python">
+              </code></pre>
+			</td>
+			<td>
+			<pre><code class="language-python">
 szam = 10
 szoveg = "Helló!"
 regi_valtozo = True
-              </code></pre></td>
-            </tr>
-          </table>
-        </section>
+              </code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div></div>
 
-        <!-- If szerkezet -->
-        <section>
+
+</section><section data-id="929e21cfeba23f6d053d6b64eddfa138"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 82.5px;" data-name="text-23a27f" data-block-id="3770281e248d844de686f22ea6de0093"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h2>Feltételes szerkezet (if)</h2>
           <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tbody>
+<tr>
+<th>JavaScript</th>
+<th>Python</th>
+</tr>
             <tr>
               <td><pre><code class="language-js">
-if (szam > 5) {
+if (szam &gt; 5) {
   console.log("Nagyobb");
 } else if (szam === 5) {
   console.log("Pontosan 5");
@@ -52,7 +71,7 @@ if (szam > 5) {
 }
               </code></pre></td>
               <td><pre><code class="language-python">
-if szam > 5:
+if szam &gt; 5:
     print("Nagyobb")
 elif szam == 5:
     print("Pontosan 5")
@@ -60,37 +79,41 @@ else:
     print("Kisebb")
               </code></pre></td>
             </tr>
-          </table>
-        </section>
-
-        <!-- While ciklus -->
-        <section>
+          </tbody>
+</table>
+        </div></div></section><section data-id="ea6f94aaad4d72129e6e8879513b84b8"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 136.5px;" data-name="text-c55cbf" data-block-id="2faa010c340504f3b0ea76e8bea15de8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h2>While ciklus</h2>
           <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tbody>
+<tr>
+<th>JavaScript</th>
+<th>Python</th>
+</tr>
             <tr>
               <td><pre><code class="language-js">
 let i = 0;
-while (i < 5) {
+while (i &lt; 5) {
   console.log(i);
   i++;
 }
               </code></pre></td>
               <td><pre><code class="language-python">
 i = 0
-while i < 5:
+while i &lt; 5:
     print(i)
     i += 1
               </code></pre></td>
             </tr>
-          </table>
-        </section>
-
-        <!-- Listák -->
-        <section>
+          </tbody>
+</table>
+        </div></div></section><section data-id="c87fa9929c606d60e1ea3a1b0c89b414"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 172.5px;" data-name="text-23010c" data-block-id="897572541288da6a5d573d55219bf9af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h2>Listák / Tömbök</h2>
           <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tbody>
+<tr>
+<th>JavaScript</th>
+<th>Python</th>
+</tr>
             <tr>
               <td><pre><code class="language-js">
 let lista = [1,2,3];
@@ -103,40 +126,49 @@ lista.append(4)
 print(lista[0])
               </code></pre></td>
             </tr>
-          </table>
-        </section>
+          </tbody>
+</table>
+        </div></div></section><section data-id="c74413ac0fff39f17e5684258244c0aa"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 154.5px;" data-name="text-33243d" data-block-id="82207d3391858a67bca5fe1b733b503f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
+<h2>Függvények</h2>
 
-        <!-- Függvények -->
-        <section>
-          <h2>Függvények</h2>
-          <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
-            <tr>
-              <td><pre><code class="language-js">
+<table>
+	<tbody>
+		<tr>
+			<th>JavaScript</th>
+			<th>Python</th>
+		</tr>
+		<tr>
+			<td>
+			<pre><code class="language-js">
 function osszeg(a, b) {
-  return a + b;
+  return a + b;
 }
 console.log(osszeg(3,4));
-              </code></pre></td>
-              <td><pre><code class="language-python">
+              </code></pre>
+			</td>
+			<td>
+			<pre><code class="language-python">
 def osszeg(a, b):
-    return a + b
+    return a + b
 
 print(osszeg(3,4))
-              </code></pre></td>
-            </tr>
-          </table>
-        </section>
-
-        <!-- For ciklus -->
-        <section>
+              </code></pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div></div></section><section data-id="d0df8735a288c6dc1a4487f0683c83c0"><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 46.5px;" data-name="text-f86aab" data-block-id="92721dc97e9b2f541f4d99a45e3a4f77"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h2>For ciklus</h2>
           <table>
-            <tr><th>JavaScript</th><th>Python</th></tr>
+            <tbody>
+<tr>
+<th>JavaScript</th>
+<th>Python</th>
+</tr>
             <tr>
               <td><pre><code class="language-js">
 // klasszikus for
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i &lt; 5; i++) {
   console.log(i);
 }
 
@@ -157,29 +189,107 @@ for elem in lista:
     print(elem)
               </code></pre></td>
             </tr>
-          </table>
-        </section>
-
-        <!-- Összefoglaló -->
-        <section>
+          </tbody>
+</table>
+        </div></div></section><section data-id="60b1af19ecf0e9f2ef486d2284c9061d" data-auto-animate=""><div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 125.5px;" data-name="text-d48a50" data-block-id="eff877530fd9099466107df7b259cd3c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" data-has-custom-html="">
           <h2>Összefoglaló táblázat</h2>
           <table>
-            <tr><th>Fogalom</th><th>JavaScript</th><th>Python</th></tr>
-            <tr><td>Változó</td><td>let x = 5;</td><td>x = 5</td></tr>
-            <tr><td>If</td><td>if (...) { ... } else if (...) { ... }</td><td>if ...: elif ...: else:</td></tr>
-            <tr><td>While</td><td>while (feltétel) { ... }</td><td>while feltétel: ...</td></tr>
-            <tr><td>For</td><td>for (let i=0; i<5; i++)</td><td>for i in range(5)</td></tr>
-            <tr><td>Lista</td><td>arr.push(10)</td><td>arr.append(10)</td></tr>
-            <tr><td>Függvény</td><td>function f(x){...}</td><td>def f(x): ...</td></tr>
-          </table>
-        </section>
+            <tbody>
+<tr>
+<th>Fogalom</th>
+<th>JavaScript</th>
+<th>Python</th>
+</tr>
+            <tr>
+<td>Változó</td>
+<td>let x = 5;</td>
+<td>x = 5</td>
+</tr>
+            <tr>
+<td>If</td>
+<td>if (...) { ... } else if (...) { ... }</td>
+<td>if ...: elif ...: else:</td>
+</tr>
+            <tr>
+<td>While</td>
+<td>while (feltétel) { ... }</td>
+<td>while feltétel: ...</td>
+</tr>
+            <tr>
+<td>For</td>
+<td>for (let i=0; i&lt;5; i++)</td>
+<td>for i in range(5)</td>
+</tr>
+            <tr>
+<td>Lista</td>
+<td>arr.push(10)</td>
+<td>arr.append(10)</td>
+</tr>
+            <tr>
+<td>Függvény</td>
+<td>function f(x){...}</td>
+<td>def f(x): ...</td>
+</tr>
+          </tbody>
+</table>
+        </div></div></section>
+			</div>
+		</div>
 
-      </div>
-    </div>
+		<script>
+			var SLConfig = {"deck": {"id":3495663,"slug":"deck-22d25e","title":"deck","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2025-11-15T03:33:16.674Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/b4e9d1c832fd76243bc5889685dd804e/thumb.jpg?1763135427","view_count":0,"user":{"id":3015713,"username":"sandorkakuk","name":"Sándor Kakuk","description":"","thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocLH29PgsA0QZ0y2Oghi81cbTcTPSdfI_eqe0Rm4PrDA_PtL_akD0w=s96-c","account_type":"lite","team_id":null,"settings":{"id":57630448,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":8,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1765962788875,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","notes":{}}};
 
-    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
-    <script>
-      Reveal.initialize();
-    </script>
-  </body>
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
 </html>
